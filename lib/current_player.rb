@@ -4,7 +4,7 @@ def turn_count(board)
   board.each do |c|
     if c == "X"||c == "0"
       turn+=1
-  end 
+  end
 end
 return turn
 end
@@ -14,9 +14,9 @@ end
 def current_player(board)
   turn = turn_count(board)
   if(turn %2 ==0)
-    
+
     return "X"
   else
     return "O"
-  
+
 end
